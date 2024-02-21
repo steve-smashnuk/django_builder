@@ -5,7 +5,7 @@ For more information on this file, see
 https://docs.djangoproject.com/
 
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -114,6 +114,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/XXX_DJANGO_VERSION_PATCH_XXX/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/XXX_DJANGO_VERSION_PATCH_XXX/ref/settings/#default-auto-field
